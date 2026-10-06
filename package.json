@@ -1,7 +1,17 @@
 {
-  "name":"cool-next-react-rebuild",
-  "version":"3.0.0",
-  "private":true,
-  "scripts":{"dev":"next dev","build":"next build","start":"next start","lint":"next lint"},
-  "dependencies":{"next":"^15.5.0","react":"^19.1.0","react-dom":"^19.1.0","ws":"^8.18.3"}
+  "name": "cool-next-react-rebuild",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^16.3.8",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "ws": "^8.18.3"
+  }
 }

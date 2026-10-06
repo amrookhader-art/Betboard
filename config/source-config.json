@@ -1,0 +1,33 @@
+{
+  "source": "mafiono/cool",
+  "license": "MIT",
+  "runtime": {
+    "swarm": {
+      "http": "https://as-swarm-ws-re.betconstruct.com/",
+      "websocket": "wss://eu-swarm-ws-re.betcoswarm.com/",
+      "legacyCompiledFallback": "ws://10.32.5.83:8282/",
+      "useWebSocket": true,
+      "webSocketTimeout": 5000,
+      "maxWebsocketRetries": 5,
+      "webSocketRetryInterval": 2000
+    },
+    "socketIo": {
+      "covid": "https://casino-service-dev-ws.bcsocial.net/covid"
+    },
+    "casino": {
+      "urlPrefix": "https://games.springbuilder.site",
+      "gamesLoad": "/global/casinoGamesLoad.php",
+      "play": "/global/play.php",
+      "launch": "/LaunchGame",
+      "partnerId": 4,
+      "deviceTypeId": 1,
+      "platformType": 0,
+      "newWindowExternalIds": ["28", "11"]
+    }
+  },
+  "notes": [
+    "The rebuild is an independent implementation and does not ship the original compiled application bundle.",
+    "The production Swarm endpoint is configuration-driven; the legacy private-network endpoint is retained only as a documented fallback.",
+    "The original application uses a JSON command protocol over the Swarm WebSocket: request_session, get/subscribe, unsubscribe, and validate_recaptcha are visible in the compiled client."
+  ]
+}

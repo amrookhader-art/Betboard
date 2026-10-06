@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server'; import {buildLaunch} from '@/lib/launch'; export async function GET(req){const u=new URL(req.url);const d=buildLaunch(u.searchParams.get('gameId'),u.searchParams.get('mode')||'real');return NextResponse.json(d,{status:d.status||200});}
